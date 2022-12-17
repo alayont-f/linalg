@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<section xml:id="sec_mtx_egspace">
+  <title>Eigenspaces of Matrix</title>
+  <p>
+    Recall that the eigenvectors of an
+    <m>n \times n</m> matrix <m>A</m> satisfy the equation
+    <me>
+      A \vx = \lambda \vx
+    </me>
+    for some scalar <m>\lambda</m>.
+    Equivalently,
+    the eigenvectors of <m>A</m> with eigenvalue <m>\lambda</m> satisfy the equation
+    <me>
+      (A - \lambda I_n) \vx = \vzero
+    </me>.
+  </p>
+  <p>
+    In other words,
+    the eigenvectors for <m>A</m> with eigenvalue <m>\lambda</m> are the non-zero vectors in <m>\Nul A-\lambda I_n</m>.
+    Recall that the null space of an
+    <m>n \times n</m> matrix is a subspace of <m>\R^n</m>.
+    In <xref ref="pa_3_c_1"></xref>
+    we say how these subspaces provided a convenient coordinate system through which to view a matrix transformation.
+    These special null spaces are called <term>eigenspaces</term>.
+  </p>
+
+  <definition>
+    <idx><h>eigenspace</h></idx>
+    <statement>
+      <p>
+        Let <m>A</m> be an <m>n \times n</m> matrix with eigenvalue <m>\lambda</m>.
+        The <term>eigenspace</term>
+        for <m>A</m> corresponding to <m>\lambda</m> is the null space of <m>A - \lambda I_n</m>.
+      </p>
+    </statement>
+  </definition>
+
+  <activity xml:id="act_3_c_1">
+    <introduction>
+    <p>
+      The matrix <m>A = \left[ \begin{array}{rrrr} 2\amp 0\amp 1 \\ 0\amp 2\amp -1 \\ 0\amp 0\amp 1 \end{array} \right]</m> has two distinct eigenvalues.
+    </p>
+    </introduction>
+      <task>
+        <statement>
+          <p>
+            Find a basis for the eigenspace of <m>A</m> corresponding to the eigenvalue <m>\lambda_1 = 1</m>.
+            In other words, find a basis for <m>\Nul A - I_3</m>.
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Find a basis for the eigenspace of <m>A</m> corresponding to the eigenvalue <m>\lambda_2 = 2</m>.
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Is it true that if <m>\vv_1</m> and <m>\vv_2</m> are two distinct eigenvectors for <m>A</m>,
+            that <m>\vv_1</m> and <m>\vv_2</m> are linearly independent?
+            Explain.
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Is it possible to have two linearly independent eigenvectors corresponding to the same eigenvalue?
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Is it true that if <m>\vv_1</m> and <m>\vv_2</m> are two distinct eigenvectors corresponding to different eigenvalues for <m>A</m>,
+            that <m>\vv_1</m> and <m>\vv_2</m> are linearly independent?
+            Explain.
+          </p>
+        </statement>
+      </task>
+    
+  </activity>
+
+  <p>
+    If we know an eigenvalue <m>\lambda</m> of an <m>n \times n</m> matrix <m>A</m>,
+    <xref ref="act_3_c_1"></xref>
+    shows us how to find a basis for the corresponding eigenspace <mdash/> just row reduce
+    <m>A - \lambda I_n</m> to find a basis for <m>\Nul A-\lambda I_n</m>.
+    To this point we have always been given eigenvalues for our matrices,
+    and have not seen how to find these eigenvalues.
+    That process will come a bit later.
+    For now, we just want to become more familiar with eigenvalues and eigenvectors.
+    The next activity should help connect eigenvalues to ideas we have discussed earlier.
+  </p>
+
+  <activity xml:id="act_3_c_2">
+    <introduction>
+    <p>
+      Let <m>A</m> be an <m>n \times n</m> matrix with eigenvalue <m>\lambda</m>.
+    </p>
+    </introduction>
+      <task>
+        <statement>
+          <p>
+            How many solutions does the equation <m>(A-\lambda I_n) \vx = \vzero</m> have?
+            Explain.
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Can <m>A - \lambda I_n</m> have a pivot in every column?
+            Why or why not?
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Can <m>A - \lambda I_n</m> have a pivot in every row?
+            Why or why not?
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Can the columns of <m>A - \lambda I_n</m> be linearly independent?
+            Why or why not?
+          </p>
+        </statement>
+      </task>
+    
+  </activity>
+</section>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<section xml:id="sec_jordan_intro">
+  <title>Introduction</title>
+  <p>
+    We have seen several different matrix factorizations so far,
+    eigenvalue decomposition
+    (<xref ref="chap_diagonalization"></xref>),
+    singular value decomposition
+    (<xref ref="chap_SVD"></xref>),
+    QR factorization
+    (<xref ref="chap_gram_schmidt"></xref>),
+    and LU factorization
+    (<xref ref="chap_det_properties"></xref>).
+    In this section, we investigate the Jordan canonical form,
+    which in a way generalizes the eigenvalue decomposition.
+    For matrices with an eigenvalue decomposition,
+    the geometric multiplicity of each eigenvalue
+    (the dimension of the corresponding eigenspace)
+    must equal its algebraic multiplicity
+    (the number of times the eigenvalue occurs as a root of the characteristic polynomial of the matrix).
+    We know that not every matrix has an eigenvalue decomposition.
+    However, every square matrix has a Jordan canonical form,
+    in which we use generalized eigenvectors and block diagonal form to approximate the eigenvalue decomposition behavior.
+    At the end of the section we provide a complete proof of the existence of the Jordan canonical form.
+  </p>
+</section>

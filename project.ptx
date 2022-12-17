@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    This file provides the overall configuration for your PreTeXt
+    project. To edit the content of your document, open `source/main.ptx`
+    (default location).
+-->
+<project>
+  <targets>
+    <target name="web">
+      <format>html</format>
+      <source>source/main.ptx</source>
+      <publication>publication/publication.ptx</publication>
+      <output-dir>output/html</output-dir>
+      <stringparam key="html.css.extra" value="external/custom_style.css"/>
+    </target>
+    <target name="latex">
+      <format>latex</format>
+      <source>source/main.ptx</source>
+      <publication>publication/publication.ptx</publication>
+      <output-dir>output/latex</output-dir>
+      <stringparam key="latex.geometry" value="top=1in, bottom=1in, outer=1in, inner=1in"/>
+      <xsl>xsl/custom-latex.xsl</xsl>
+    </target>
+    <target name="subset-latex">
+      <format>latex</format>
+      <source>source/main-subset.ptx</source>
+      <publication>publication/publication.ptx</publication>
+      <output-dir>output/subset-latex</output-dir>
+      <stringparam key="latex.geometry" value="top=1in, bottom=1in, outer=1in, inner=1in"/>
+      <xsl>xsl/custom-latex.xsl</xsl>
+    </target>
+    <target name="subset-web">
+      <format>html</format>
+      <source>source/main-subset.ptx</source>
+      <publication>publication/publication.ptx</publication>
+      <output-dir>output/subset-html</output-dir>
+      <stringparam key="html.css.extra" value="external/custom_style.css"/>
+    </target>
+    <target name="pdf" pdf-method="xelatex">
+      <format>pdf</format>
+      <source>source/main.ptx</source>
+      <publication>publication/publication.ptx</publication>
+      <output-dir>output/pdf</output-dir>
+      <xsl>xsl/custom-latex.xsl</xsl>
+      <!-- Set margins here. For electronic pdf, make all values the same -->
+      <stringparam key="latex.geometry" value="top=1in, bottom=1in, outer=1in, inner=1in"/>
+    </target>
+  </targets>
+  <executables>
+      <latex>xelatex</latex>
+      <pdfsvg>pdf2svg</pdfsvg>
+      <asy>asy</asy>
+      <sage>sage</sage>
+      <pdfpng>convert</pdfpng>
+      <pdfeps>pdftops</pdfeps>
+      <pdfcrop>pdf-crop-margins</pdfcrop>
+      <pageres>pageres</pageres>
+      <node>node</node>
+      <liblouis>file2brl</liblouis>
+    </executables>
+</project>

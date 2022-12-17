@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<exercises>
+<exercise xml:id="sec_vec_rep_exer">
+    <statement>
+      <p>
+        Given vectors <m>\vu=\left[ \begin{array}{c} 1 \\ 2 \end{array} \right]</m> and 
+        <m>\vv=\left[ \begin{array}{r} -1 \\ 2 \end{array} \right]</m> in <m>\R^2</m>,
+        determine if <m>\vw=\left[ \begin{array}{r} -4 \\ -1 \end{array} \right]</m> 
+        can be written as a linear combination of <m>\vu</m> and <m>\vv</m>.
+        If so, determine the weights of <m>\vu</m> and <m>\vv</m> which produce <m>\vw</m>.
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <m>\vw = \left(-\frac{9}{4}\right) \vu + \left(\frac{7}{4}\right) \vv</m>
+      </p>
+    </answer>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Given vectors <m>\vv_1=\left[ \begin{array}{c} 1 \\ 2 \\1 \end{array} \right]</m>,
+        <m>\vv_2=\left[ \begin{array}{r} -2 \\ 1 \\2 \end{array} \right]</m> and <m>\vv_3=\left[ \begin{array}{r} -1 \\ 3\\3 \end{array} \right]</m> in <m>\R^3</m>,
+        determine if <m>\vw=\left[ \begin{array}{c} 5\\ 5\\ 1 \end{array} \right]</m> can be written as a linear combination of <m>\vv_1</m>,
+        <m>\vv_2</m> and <m>\vv_3</m>.
+        If so, determine the weights of <m>\vv_1</m>,
+        <m>\vv_2</m> and <m>\vv_3</m> which produce <m>\vw</m>.
+        Reflect on the result.
+        Is there anything special about the given vectors <m>\vv_1</m>,
+        <m>\vv_2</m> and <m>\vv_3</m>?
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Let <m>\vu=\left[ \begin{array}{c} 1 \\ 2 \\1 \end{array} \right]</m> and <m>\vv=\left[ \begin{array}{r} -1 \\ 1 \\ 1 \end{array} \right]</m> in <m>\R^3</m>.
+        Determine which vectors <m>\vw= \left[ \begin{array}{c} w_1 \\ w_2 \\ w_3 \end{array} \right]</m> in <m>\R^3</m> can be written as a linear combination of <m>\vu</m> and <m>\vv</m>.
+        Does the set of <m>\vw</m>'s include the 0 vector?
+        If so, determine which weights in the linear combination produce the 0 vector.
+        If not, explain why not.
+      </p>
+    </statement>
+    <answer>
+      <p>
+        Only when <m>w_1 = 2w_2 - 3w_3</m>.
+        <m>0 \vu + 0\vv = \vzero</m>
+      </p>
+    </answer>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>
+        Consider vectors <m>\vu=\left[ \begin{array}{c} 0\\ 2\\0 \end{array} \right]</m> and 
+        <m>\vv=\left[ \begin{array}{c} 1\\ 1\\1 \end{array} \right]</m> in <m>\R^3</m>.
+      </p>
+    </introduction>
+        <task>
+          <statement>
+            <p>
+              Find four specific linear combinations of the vectors <m>\vu</m> and <m>\vv</m>.
+            </p>
+          </statement>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Explain why the zero vector must be a linear combination of <m>\vu</m> and <m>\vv</m>.
+            </p>
+          </statement>
+        </task>
+        <task>
+          <statement>
+            <p>
+              What kind of geometric shape does the set of all linear combinations of 
+              <m>\vu</m> and <m>\vv</m> have in <m>\R^3</m>?
+            </p>
+          </statement>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Can we obtain any vector in <m>\R^3</m> as a linear combination of <m>\vu</m> 
+              and <m>\vv</m>?
+              Explain.
+            </p>
+          </statement>
+        </task>
+  </exercise>
+
+  <exercise xml:id="ex_1_d_acid">
+    <introduction>
+      <p>
+        Suppose we have two different water-benzene-acetic acid solutions,
+        one with 40% water, 50% benzene and 10% acetic acid,
+        the other with 52% water, 42% benzene and 6% acid.
+      </p>
+    </introduction>
+        <task>
+          <statement>
+            <p>
+              An experiment we want to conduct requires a solution with 43% water,
+              48% benzene and 9% acid.
+              Representing each acid solution as a vector,
+              determine if we can we make this new acid solution by mixing the first two solutions,
+              or do we have to run to the chemical solutions market to get the solution we want?
+            </p>
+          </statement>
+          <answer>
+            <p>
+              We cannot make the desired solution.
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Using the water-benzene-acetic acid solutions in the previous problem,
+              can we obtain an acid solution which contains 50% water, 43% benzene and 7% acid?
+            </p>
+          </statement>
+          <answer>
+            <p>
+              We can make the desired chemical solution with
+              <m>\frac{3}{4}</m> of solution <m>\vv_1</m> for every
+              <m>\frac{1}{4}</m> of solution <m>\vv_2</m>.
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Determine the relationship between the percentages of water, benzene,
+              and acid in solutions which can be obtained by mixing the two given 
+              water-benzene-acetic acid solutions above.
+            </p>
+          </statement>
+          <answer>
+            <p>
+              If <m>\vw = \left[ \begin{array}{c} w_1\\w_2\\w_3 \end{array} \right]</m> can be made from our original two chemical solutions,
+              then <m>w_3+\frac{3}{23}w_1-\frac{7}{23}w_2 = 0</m>.
+            </p>
+          </answer>
+        </task>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Is the vector <m>\vb = \left[ \begin{array}{c} 0\\1\\2 \end{array} \right]</m> in <m>\Span\left\{ \left[ \begin{array}{r} 2\\-1\\0 \end{array} \right], \left[ \begin{array}{r} -3\\0\\-5 \end{array} \right], \left[ \begin{array}{c} 1\\1\\0 \end{array} \right] \right\}</m>?
+        Justify your answer.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>
+        Describe geometrically each of the following sets.
+      </p>
+    </introduction>
+        <task>
+          <statement>
+            <p>
+              <m>\Span\left\{\left[ \begin{array}{c} 1\\1 \end{array} \right], \left[ \begin{array}{r} -1\\-1 \end{array} \right]\right\}</m> in <m>\R^2</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>\Span\{\vv_1\}</m> is the line in <m>\R^2</m> through the origin and the point <m>(1,1)</m>.
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>\Span\left\{\left[ \begin{array}{c} 1\\1\\1 \end{array} \right], \left[ \begin{array}{r} -1\\-1\\-1 \end{array} \right], \left[ \begin{array}{c} 2\\0\\1 \end{array} \right]\right\}</m> in <m>\R^3</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>\Span\{\vv_1,\vv_3\}</m> is the plane in <m>\R^3</m> through the origin and the points <m>(1,1,1)</m> and <m>(2,0,1)</m>.
+            </p>
+          </answer>
+        </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>
+        Consider the linear system
+        <md alignment="alignat">
+          <mrow> {2}x_1  \amp {}+{}  \amp {3}x_2 \amp {}+{}  \amp {3}x_3  \amp {}    \amp {}    \amp {}={} \amp 0\amp {}</mrow>
+          <mrow>x_1  \amp {}    \amp {}     \amp {}+{}  \amp {6}x_3  \amp {}+{}  \amp {6}x_4  \amp {}={} \amp 0\amp {}</mrow>
+          <mrow>{2}x_1  \amp {}+{}  \amp {4}x_2  \amp {}+{}  \amp {3}x_3  \amp {}-{}  \amp {}x_4  \amp {}={} \amp 0\amp {.}</mrow>
+        </md>
+      </p>
+    </introduction>
+        <task>
+          <statement>
+            <p>
+              Find the general solution to this system.
+            </p>
+          </statement>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Find two specific vectors <m>\vv_1</m> and <m>\vv_2</m> so that the solution set to this system is <m>\Span\{\vv_1, \vv_2\}</m>.
+            </p>
+          </statement>
+        </task>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Answer the following question as yes or no.
+        Verify your answer.
+        If <m>\vu</m> and <m>\vv</m> are vectors in <m>\R^n</m>,
+        then <m>\vv</m> is in <m>\Span\{\vu, \vu-\vv\}</m>.
+      </p>
+    </statement>
+    <answer>
+      <p>
+        Yes.
+      </p>
+    </answer>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>
+        Let <m>\vv</m>, <m>\vu</m>,
+        and <m>\vw</m> be vectors in <m>\R^n</m> and let <m>a</m> and <m>b</m> be scalars.
+        Verify <xref ref="thm_vector_properties"></xref>.
+        That is, show that
+      </p>
+    </introduction>
+        <task>
+          <statement>
+            <p>
+              <m>\vv + \vu = \vu + \vv</m>
+            </p>
+          </statement>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>(\vv + \vu) + \vw = \vv + (\vu + \vw)</m>
+            </p>
+          </statement>
+        </task>
+        <task>
+          <statement>
+            <p>
+              The vector <m>\vz = \left[ \begin{array}{c} 0 \\ 0 \\ \vdots \\ 0 \end{array} \right]</m> has the property that <m>\vv + \vz = \vv</m>.
+            </p>
+          </statement>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>(-1)\vv + \vv = \vz</m>.
+            </p>
+          </statement>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>(a+b) \vv = a\vv + b\vv</m>
+            </p>
+          </statement>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>a(\vv + \vu) = a\vv + a\vu</m>
+            </p>
+          </statement>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>(ab) \vv = a(b\vv)</m>
+            </p>
+          </statement>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>1 \vv = \vv</m>.
+            </p>
+          </statement>
+        </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>
+        Label each of the following statements as True or False.
+        Provide justification for your response.
+      </p>
+    </introduction>
+        <task>
+          <title>True/False</title>
+          <statement>
+            <p>
+              A vector in <m>\R^2</m>,
+              i.e. a two-dimensional vector,
+              is also a vector in <m>\R^3</m>.
+            </p>
+          </statement>
+          <answer>
+            <p>
+              F
+            </p>
+          </answer>
+        </task>
+        <task>
+          <title>True/False</title>
+          <statement>
+            <p>
+              Any vector in <m>\R^2</m> can be visualized as a vector in <m>\R^3</m> by 
+              adding a 0 as the last coordinate.
+            </p>
+          </statement>
+        </task>
+        <task>
+          <title>True/False</title>
+          <statement>
+            <p>
+              The zero vector is a scalar multiple of any other vector
+              (of the same size).
+            </p>
+          </statement>
+          <answer>
+            <p>
+              T
+            </p>
+          </answer>
+        </task>
+        <task>
+          <title>True/False</title>
+          <statement>
+            <p>
+              The zero vector cannot be a linear combination of two non-zero vectors.
+            </p>
+          </statement>
+        </task>
+        <task>
+          <title>True/False</title>
+          <statement>
+            <p>
+              Given two vectors <m>\vu</m> and <m>\vv</m>,
+              the vector <m>\frac{1}{2}\vu</m> is a linear combination of <m>\vu</m> and <m>\vv</m>.
+            </p>
+          </statement>
+          <answer>
+            <p>
+              T
+            </p>
+          </answer>
+        </task>
+        <task>
+          <title>True/False</title>
+          <statement>
+            <p>
+              Given any two non-zero vectors <m>\vu</m> and <m>\vv</m> in <m>\R^2</m>,
+              we can obtain any vector in <m>\R^2</m> as a linear combination of <m>\vu</m> and <m>\vv</m>.
+            </p>
+          </statement>
+        </task>
+        <task>
+          <title>True/False</title>
+          <statement>
+            <p>
+              Given any two distinct vectors <m>\vu</m> and <m>\vv</m> in <m>\R^2</m>,
+              we can obtain any vector in <m>\R^2</m> as a linear combination of <m>\vu</m> and <m>\vv</m>.
+            </p>
+          </statement>
+          <answer>
+            <p>
+              F
+            </p>
+          </answer>
+        </task>
+        <task>
+          <title>True/False</title>
+          <statement>
+            <p>
+              If <m>\vu</m> can be expressed as a linear combination of <m>\vv_1</m> and <m>\vv_2</m>,
+              then <m>2\vu</m> can also be expressed as a linear combination of <m>\vv_1</m> and <m>\vv_2</m>.
+            </p>
+          </statement>
+        </task>
+        <task>
+          <title>True/False</title>
+          <statement>
+            <p>
+              The span of any two vectors neither of which is a multiple of the other can be visualized as a plane through the origin.
+            </p>
+          </statement>
+          <answer>
+            <p>
+              T
+            </p>
+          </answer>
+        </task>
+        <task>
+          <title>True/False</title>
+          <statement>
+            <p>
+              Given any vector,
+              the collection of all linear combinations of this vector can be visualized as a line through the origin.
+            </p>
+          </statement>
+        </task>
+        <task>
+          <title>True/False</title>
+          <statement>
+            <p>
+              The span of any collection of vectors includes the <m>\vzero</m> vector.
+            </p>
+          </statement>
+          <answer>
+            <p>
+              T
+            </p>
+          </answer>
+        </task>
+        <task>
+          <title>True/False</title>
+          <statement>
+            <p>
+              If the span of <m>\vv_1</m> and <m>\vv_2</m> is all of <m>\R^2</m>,
+              then so is the span of <m>\vv_1</m> and <m>\vv_1+\vv_2</m>.
+            </p>
+          </statement>
+        </task>
+        <task>
+          <title>True/False</title>
+          <statement>
+            <p>
+              If the span of
+              <m>\vv_1, \vv_2</m> and <m>\vv_3</m> is all of <m>\R^3</m>,
+              then so is the span of <m>\vv_1+\vv_2</m> and <m>\vv_2+\vv_3</m>.
+            </p>
+          </statement>
+          <answer>
+            <p>
+              F
+            </p>
+          </answer>
+        </task>
+  </exercise>
+</exercises>

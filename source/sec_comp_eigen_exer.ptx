@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<exercises xml:id="sec_comp_eigen_exer">
+  
+  <exercise>
+    <introduction>
+      <p>
+        Find eigenvalues and eigenvectors of each of the following matrices.
+      </p>
+    </introduction>
+        <task>
+          <statement>
+            <p>
+              <m>\left[ \begin{array}{rc} 2\amp 4 \\ -2\amp 2 \end{array} \right]</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              Eigenvalues:<m>\lambda_1 = 2+2\sqrt{2}i</m> and <m>\lambda_2 = 2-2\sqrt{2}i</m>; Eigenvectors:
+              <m>[-\sqrt{2}i \ 1]^{\tr}</m> and <m>[\sqrt{2}i \ 1]^{\tr}</m>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>\left[ \begin{array}{rc} 3\amp 2 \\ -1\amp 1 \end{array} \right]</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              Eigenvalues:
+              <m>\lambda_1 = 2+i</m> and <m>\lambda_2 = 2-i</m>; Eigenvectors:
+              <m>[-(1+i) \ 1]^{\tr}</m>, <m>[-(1-i) \ 1]^{\tr}</m>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>\left[ \begin{array}{cr} 1\amp -2 \\ 4\amp -3 \end{array} \right]</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              Eigenvalues:
+              <m>\lambda_1 = -1+2i</m> and <m>\lambda_2 = -1-2i</m>; Eigenvectors:
+              <m>[(1+i) \ 2]^{\tr}</m> and <m>[(1-i) \ 2]^{\tr}</m>
+            </p>
+          </answer>
+        </task>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Find a rotation-scaling matrix where the rotation angle is
+        <m>\theta=3\pi/4</m> and scaling factor is less than 1.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Determine which rotation-scaling matrices have determinant equal to 1.
+        Be as specific as possible.
+      </p>
+    </statement>
+    <answer>
+      <p>
+        Just the rotation matrices
+      </p>
+    </answer>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Determine the rotation-scaling matrix inside the matrix <m>\left[ \begin{array}{rc} 2\amp 4 \\ -2\amp 2 \end{array} \right]</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Find a real <m>2\times 2</m> matrix with eigenvalue <m>1+2i</m>.
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <m>\left[ \begin{array}{cr} 1\amp -2 \\ 2\amp 1 \end{array} \right]</m>
+      </p>
+    </answer>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Find a real <m>2\times 2</m> matrix which is not a rotation-scaling matrix with eigenvalue <m>-1+2i</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>
+        We have seen how to find the characteristic polynomial of an <m>n \times n</m> matrix.
+        In this exercise we consider the reverse question.
+        That is, given a polynomial <m>p(\lambda)</m> of degree <m>n</m>,
+        can we find an <m>n \times n</m> matrix whose characteristic polynomial is <m>p(\lambda)</m>?
+      </p>
+    </introduction>
+        <task>
+          <statement>
+            <p>
+              Find the characteristic polynomial of the
+              <m>2 \times 2</m> matrix <m>C = \left[ \begin{array}{cc} 0\amp -a_0\\1\amp -a_1 \end{array} \right]</m>.
+              Use this result to find a real valued matrix whose eigenvalues are <m>1+i</m> and <m>1-i</m>.
+            </p>
+          </statement>
+          <answer>
+            <p>
+              Characteristic polynomial <m>\lambda^2+a_1\lambda + a_0</m>;
+              <m>\left[ \begin{array}{cr} 0\amp -2\\1\amp 2 \end{array} \right]</m>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Repeat part (a) by showing that
+              <m>p(\lambda) = -\left(\lambda^3+a_2\lambda^2+a_1\lambda+a_0\right)</m> is the characteristic polynomial of the
+              <m>3 \times 3</m> matrix <m>C = \left[ \begin{array}{ccc} 0\amp 0\amp -a_0\\1\amp 0\amp -a_1\\0\amp 1\amp -a_2 \end{array} \right]</m>.
+            </p>
+          </statement>
+          <answer>
+            <p>
+               <m>\det(C - \lambda I_3) = -\lambda^3 -a_2 \lambda^2 - a_1 \lambda - a_0</m>
+            </p>
+          </answer>
+        </task>
+        <task>
+        <idx><h>companion matrix</h></idx>
+          <statement>
+            <p>
+              We can generalize this argument.
+              Prove, using mathematical induction, that the polynomial
+              <me>
+                p(\lambda) =(-1)^n\left( \lambda^n + a_{n-1}\lambda^{n-1} + a_{n-2}\lambda^{n-2} + \cdots + a_1 \lambda + a_0\right)
+              </me>
+              is the characteristic polynomial of the matrix
+              <me>
+                C = \left[ \begin{array}{cccccc} 0\amp 0\amp 0\amp \cdots\amp 0\amp -a_{0}\\ 1\amp 0\amp 0\amp \cdots\amp 0\amp -a_{1} \\ 0\amp 1\amp 0\amp \cdots\amp 0\amp -a_2 \\ \vdots \amp  \vdots \amp \vdots\amp  \ddots \amp  \vdots   \amp  \vdots   \\ 0 \amp  0 \amp  0\amp  \cdots \amp   1 \amp  -a_{n-1} \end{array}  \right]
+              </me>.
+              The matrix <m>C</m> is called the
+              <term>companion matrix</term>
+          
+              for <m>p(\lambda)</m>.
+            </p>
+          </statement>
+        </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>
+        Label each of the following statements as True or False.
+        Provide justification for your response.
+      </p>
+    </introduction>
+        <task>
+          <title>True/False</title>
+          <statement>
+            <p>
+              If <m>3-4i</m> is an eigenvalue of a real matrix,
+              then so is <m>3+4i</m>.
+            </p>
+          </statement>
+          <answer>
+            <p>
+              T
+            </p>
+          </answer>
+        </task>
+        <task>
+          <title>True/False</title>
+          <statement>
+            <p>
+              If <m>2+3i</m> is an eigenvalue of a
+              <m>3\times 3</m> real matrix <m>A</m>,
+              then <m>A</m> has three distinct eigenvalues.
+            </p>
+          </statement>
+        </task>
+        <task>
+          <title>True/False</title>
+          <statement>
+            <p>
+              Every <m>2\times 2</m> real matrix with complex eigenvalues is a rotation-scaling matrix.
+            </p>
+          </statement>
+          <answer>
+            <p>
+              F
+            </p>
+          </answer>
+        </task>
+        <task>
+          <title>True/False</title>
+          <statement>
+            <p>
+              Every square matrix with real entries has real number eigenvalues.
+            </p>
+          </statement>
+        </task>
+        <task>
+          <title>True/False</title>
+          <statement>
+            <p>
+              If <m>A</m> is a
+              <m>2\times 2</m> matrix with complex eigenvalues similar to a rotation-scaling matrix <m>R</m>,
+              the eigenvalues of <m>A</m> and <m>R</m> are the same.
+            </p>
+          </statement>
+          <answer>
+            <p>
+              T
+            </p>
+          </answer>
+        </task>
+        <task>
+          <title>True/False</title>
+          <statement>
+            <p>
+              If <m>A</m> is a real matrix with complex eigenvalues,
+              all eigenvectors of <m>A</m> must be non-real.
+            </p>
+          </statement>
+        </task>
+   
+  </exercise>
+</exercises>

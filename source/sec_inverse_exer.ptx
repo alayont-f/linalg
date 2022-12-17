@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<exercises xml:id="sec_inverse_exer">
+  
+  <exercise xml:id="ex_2_c_unique_inverse">
+    <statement>
+      <p>
+        Let <m>A</m> be an invertible <m>n \times n</m> matrix.
+        In this exercise we will prove that the inverse of <m>A</m> is unique.
+        To do so, we assume that both <m>B</m> and <m>C</m> are inverses of <m>A</m>,
+        that is <m>AB=BA = I_n</m> and <m>AC=CA = I_n</m>.
+        By considering the product <m>BAC</m> simplified in two different ways,
+        show that <m>B=C</m>, implying that the inverse of <m>A</m> is unique.
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <m>C = (I)C = C = (BA)C = BAC = B(AC) = B(I) = B</m>
+      </p>
+    </answer>
+  </exercise>
+  
+  <exercise xml:id="ex_2_c_2by2_inverse">
+    <introduction>
+      <p>
+        Let <m>A = \left[ \begin{array}{cc} a\amp b \\ c\amp d \end{array}  \right]</m> be an arbitrary <m>2 \times 2</m> matrix.
+      </p>
+    </introduction>
+        <task>
+          <statement>
+            <p>
+              If <m>A</m> is invertible,
+              perform row operations to determine a row echelon form of <m>A</m>.
+              
+            </p>
+          </statement>
+          <hint>
+            <p>
+              You may need to consider different cases,
+              e.g., when <m>a=0</m> and when <m>a \neq 0</m>.
+            </p>
+          </hint>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Under certain conditions,
+              we can row reduce <m>[A \ | \ I_2]</m> to <m>[I_2 \ | \ B]</m>, where
+              <me>
+                B=\frac{1}{ad-bc} \left[ \begin{array}{rr} d\amp -b \\ -c\amp a \end{array}  \right]
+              </me>.
+              Use the row echelon form of <m>A</m> from part (a) to find conditions under which the
+              <m>2 \times 2</m> matrix <m>A</m> is invertible.
+              Then derive the formula for the inverse <m>B</m> of <m>A</m>.
+            </p>
+          </statement>
+        </task>
+     
+  </exercise>
+
+  <exercise>
+    
+      <task>
+        <statement>
+          <p>
+            For a few different <m>k</m> values,
+            find the inverse of <m>A = \left[ \begin{array}{cc} 1\amp k \\ 0\amp 1 \end{array} \right]</m>.
+            From these results,
+            make a conjecture as to what <m>A^{-1}</m> is in general.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\left[ \begin{array}{cc} 1\amp k \\ 0\amp 1 \end{array} \right]^{-1} = \left[ \begin{array}{cr} 1\amp -k \\ 0\amp 1 \end{array} \right]</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Prove your conjecture using the definition of inverse matrix.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Row reduce <m>[A \ | \ I_2]</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Find the inverse of <m>A = \left[ \begin{array}{ccc} 1\amp k\amp \ell \\ 0\amp 1\amp m\\0\amp 0\amp 1 \end{array} \right]</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Row reduce <m>[A \ | \ I_3]</m> to see that <m>A^{-1} = \left[ \begin{array}{crc} 1\amp -k\amp mk-\ell \\ 0\amp 1\amp -m \\ 0\amp 0\amp 1 \end{array} \right]</m>.
+          </p>
+        </answer>
+      </task>
+      <conclusion>
+      <p>
+      (Note: You can combine the first two parts above by applying the inverse finding algorithm directly on <m>A = \left[ \begin{array}{cc} 1\amp k \\ 0\amp 1 \end{array} \right]</m>.)
+      </p>
+      </conclusion>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Solve for the matrix <m>A</m> in terms of the others in the following equation:
+        <me>
+          P^{-1}(D+CA)P=B
+        </me>
+        If you need to use an inverse, assume it exists.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        For which <m>c</m> is the matrix <m>A=\left[ \begin{array}{ccr} 1\amp 2\amp -1\\2\amp 1\amp 1\\1\amp 5\amp c \end{array} \right]</m> invertible?
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <m>c \neq -4</m>
+      </p>
+    </answer>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        For which <m>c</m> is the matrix <m>A=\left[ \begin{array}{cc} c\amp 2\\3\amp c \end{array} \right]</m> invertible?
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>
+        Let <m>A</m> and <m>B</m> be invertible <m>n \times n</m> matrices.
+        Verify the remaining properties of <xref ref="thm_inverse_properties"></xref>.
+        That is, show that
+      </p>
+    </introduction>
+        <task>
+          <statement>
+            <p>
+              <m>\left(A^{-1}\right)^{-1} = A</m>.
+            </p>
+          </statement>
+        </task>
+        <task>
+          <statement>
+            <p>
+              The matrix <m>A^{\tr}</m> is invertible and <m>\left(A^{\tr}\right)^{-1} = \left(A^{-1}\right)^{\tr}</m>.
+            </p>
+          </statement>
+        </task>
+      
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>
+        Label each of the following statements as True or False.
+        Provide justification for your response.
+      </p>
+    </introduction>
+        <task>
+          <title>True/False</title>
+          <statement>
+            <p>
+              If <m>A</m> is an invertible matrix,
+              then for any two matrices <m>B, C</m>,
+              <m>AB=AC</m> implies <m>B=C</m>.
+            </p>
+          </statement>
+          <answer>
+            <p>
+              T
+            </p>
+          </answer>
+        </task>
+        <task>
+          <title>True/False</title>
+          <statement>
+            <p>
+              If <m>A</m> is invertible,
+              then so is <m>AB</m> for any matrix <m>B</m>.
+            </p>
+          </statement>
+        </task>
+        <task>
+          <title>True/False</title>
+          <statement>
+            <p>
+              If <m>A</m> and <m>B</m> are invertible
+              <m>n\times n</m> matrices, then so is <m>AB</m>.
+            </p>
+          </statement>
+          <answer>
+            <p>
+              T
+            </p>
+          </answer>
+        </task>
+        <task>
+          <title>True/False</title>
+          <statement>
+            <p>
+              If <m>A</m> is an invertible <m>n\times n</m> matrix,
+              then the equation <m>A\vx=\vb</m> is consistent for any <m>\vb</m> in <m>\R^n</m>.
+            </p>
+          </statement>
+        </task>
+        <task>
+          <title>True/False</title>
+          <statement>
+            <p>
+              If <m>A</m> is an invertible <m>n\times n</m> matrix,
+              then the equation <m>A\vx=\vb</m> has a unique solution when it is consistent.
+            </p>
+          </statement>
+          <answer>
+            <p>
+              T
+            </p>
+          </answer>
+        </task>
+        <task>
+          <title>True/False</title>
+          <statement>
+            <p>
+              If <m>A</m> is invertible, then so is <m>A^2</m>.
+            </p>
+          </statement>
+        </task>
+        <task>
+          <title>True/False</title>
+          <statement>
+            <p>
+              If <m>A</m> is invertible,
+              then it reduces to the identity matrix.
+            </p>
+          </statement>
+          <answer>
+            <p>
+              T
+            </p>
+          </answer>
+        </task>
+        <task>
+          <title>True/False</title>
+          <statement>
+            <p>
+              If a matrix is invertible, then so is its transpose.
+            </p>
+          </statement>
+        </task>
+        <task>
+          <title>True/False</title>
+          <statement>
+            <p>
+              If <m>A</m> and <m>B</m> are invertible <m>n\times n</m> matrices,
+              then <m>A+B</m> is invertible.
+            </p>
+          </statement>
+          <answer>
+            <p>
+              F
+            </p>
+          </answer>
+        </task>
+        <task>
+          <title>True/False</title>
+          <statement>
+            <p>
+              If <m>A^2=0</m>,
+              then <m>I+A</m> is invertible.
+            </p>
+          </statement>
+        </task>
+      
+  </exercise>
+</exercises>

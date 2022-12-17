@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<section xml:id="sec_proj_ls_approx">
+  <title>Project: Least Squares Linear Approximation</title>
+  
+  <p>
+    We return to the problem of finding the least squares line to fit the GDP-consumption data. We will start our work in a more general setting, determining the  method for fitting a linear function to fit any data set, like the GDP-consumption data, in the least squares sense. Then we will apply our result to the GDP-consumption data.
+  </p>
+
+  <project xml:id="act_ls_no_line">
+    <introduction>
+      <p>
+        Suppose we want to fit a linear function <m>p(x) = mx+b</m> to our data. For the sake of our argument, let us assume the general case where we have <m>n</m> data points labeled as <m>(x_1,y_1)</m>, <m>(x_2, y_2)</m>, <m>(x_3, y_3)</m>,  <m>\ldots</m>, <m>(x_n, y_n)</m>. (In the GDP-consumption data <m>n = 21</m>.) In the unlikely event that the graph of <m>p(x)</m> actually passes through these data points, then we would have the system of equations
+
+        <mdn>
+          <mrow number="no">y_1 \amp = b + mx_1</mrow>
+          <mrow number="no">y_2 \amp = b + mx_2</mrow>
+          <mrow xml:id="eq_LS_system">y_3 \amp = b + mx_3 </mrow>
+          <mrow number="no">\vdots \amp \hspace{0.39in} \vdots </mrow>
+          <mrow number="no">y_n \amp = b + mx_n \notag</mrow>
+        </mdn>
+
+        in the unknowns <m>b</m> and <m>m</m>.
+      </p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>
+          As a small example to illustrate, write the system (\ref{eq:LS_system}) using the threepoints <m>(x_1,y_1)= (1,2)</m>, <m>(x_2,y_2) = (3,4)</m>, and <m>(x_3,y_3) = (5,6)</m>. Identify the unknowns and then write this system in the form <m>M \va = \vy</m>. Explicitly identify thematrix <m>M</m> and the the vectors <m>\va</m> and <m>\vy</m>.
+        </p>
+      </statement>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Identify the specific matrix <m>M</m> and the specific vectors <m>\va</m> and <m>\vy</m> using the data inTable \ref{T:GDP_consumption}. Explain why the system <m>M \va = \vy</m> is inconsistent.(Remember, we are treating consumption as the independent variable and GDP as the dependentvariable.) What does the result tell us about the data? 
+        </p>
+      </statement>
+    </task>
+  </project>
+
+  <p>
+    <xref ref="act_ls_no_line"/> shows that the GDP-consumption data does not lie on a line. So instead of attempting to find coefficients <m>b</m> and <m>m</m> that give a solution to this system, which may be impossible, we instead look for a vector <m>\va^*</m> that provides us with something that is <q>close</q> to a solution.
+  </p>
+
+  <p>
+    If we could find <m>b</m> and <m>m</m> that give a solution to the system <m>M\va = \vy</m>, then <m>M\va - \vy</m> would be zero. If we can't make <m>M\va - \vy</m> exactly equal to the vector <m>\vzero</m>, we could instead try to minimize <m>M\va-\vy</m> in some way. One way is to minimize the length <m>||M\va-\vy||</m> of the vector <m>M\va - \vy</m>.
+  </p>
+
+  <p>
+    If we minimize the quantity <m>||M\va-\vy||</m>, then we will have minimized a function given by a sum of squares. That is, <m>||M\va-\vy||</m> is calculated to be
+
+    <men xml:id="eq_ls_equation">
+      \sqrt{(b+mx_1-y_1)^2 + (b+mx_2-y_2)^2 + \cdots + (b+mx_n-y_n)^2}
+    </men>.
+    
+    This is why the method we will derive is called the method of least squares. This method provides us with a vector <q>solution</q> in a subspace that is related to <m>M</m>. We can visualize <m>||M \va - \vy||</m> as in <xref ref="F_GDP_error"/>. In this figure the data points are shown along with a linear approximation (not the best for illustrative purposes). The lengths of the vertical line segments are the summands <m>(b+mx_i-y_i)</m> in <xref ref="eq_ls_equation"/>. So we are trying to minimize the sum of the squares of these line segments. 
+  </p>
+
+  <figure xml:id="F_GDP_error">
+    <caption>Error in the linear approximation.</caption>
+    <image source="GDP_error" width="50%">
+    </image>
+  </figure>
+
+  <p>
+    Suppose that <m>\va^*</m> minimizes <m>||M \va - \vy||</m>. Then the vector <m>M \va^*</m> is the vector that is closest to <m>\vy</m> of all of the vectors of the form <m>M \vx</m>. The fact that the vectors of the form <m>M \vx</m> make a subspace will be useful in what follows. We verify that fact in the next project activity.
+  </p>
+
+  <project xml:id="act_ls_subspace">
+    <statement>
+      <p>
+        Let <m>A</m> be an arbitrary <m>m \times k</m> matrix. Explain why the set <m>C = \{A \vx : \vx \in \R^k\}</m> is a subspace of <m>\R^m</m>. 
+      </p>
+    </statement>
+  </project>
+
+  <p>
+    <xref ref="act_ls_subspace"/> shows us that even though the GDP-consumption system <m>M \va = \vy</m> does not have a solution, we can find a vector that is close to a solution in the subspace <m>\{M \vx : \vx \in \R^2\}</m>. That is, find a vector <m>\va^*</m> in <m>\R^{2}</m> such that <m>M \va^*</m> is as close (in the least squares sense) to <m>\vy</m> as we can get. In other words, the error <m>||M \va^* - \vy||</m> is as small as possible. In the following activity we see how to find <m>\va^*</m>. 
+  </p>
+
+  <project xml:id="act_ls_minimum">
+    <introduction>
+      <p>
+        Let 
+        <me>S = \sqrt{(b+mx_1-y_1)^2 + (b+mx_2-y_2)^2 + \cdots + (b+mx_n-y_n)^2}</me>,
+        the quantity we want to minimize. The variables in <m>S</m> are <m>m</m> and <m>b</m>, so we can think of <m>S</m> as a function of the two independent variables <m>m</m> and <m>b</m>. The square root makes calculations more complicated, so it is helpful to notice that <m>S</m> will be a minimum when <m>S^2</m> is a minimum. Since <m>S^2</m> is also function of the two variables <m>b</m> and <m>m</m>, the minimum value of <m>S^2</m> will occur when the partial derivatives of <m>S^2</m> with respect to <m>b</m> and <m>m</m> are both <m>0</m> (if you haven't yet taken a multivariable calculus course, you can just assume that this is correct). This yields the equations 
+        <mdn>
+          <mrow xml:id="eq_ls_1">0 \amp = \sum_{i=1}^n \left( mx_i + b - y_i\right)x_i</mrow>
+          <mrow xml:id="eq_ls_2">0 \amp = \sum_{i=1}^n \left( mx_i+b-y_i\right)</mrow>
+        </mdn>.
+
+        In this activity we solve equations <xref ref="eq_ls_1"/> and <xref ref="eq_ls_2"/> for the unknowns <m>b</m> and <m>m</m>. (Do this in a general setting without using specific values for the <m>x_i</m> and <m>y_i</m>.)
+      </p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>
+          Let <m>r=\sum_{i=1}^n x_i^2</m>, <m>s=\sum_{i=1}^n x_i</m>, <m>t = \sum_{i=1}^n y_i</m>, and <m>u =\sum_{i=1}^n x_iy_i</m>. Show that the equations <xref ref="eq_ls_1"/> and <xref ref="eq_ls_2"/> can be written in the form
+          <md>
+            <mrow>0 \amp = bs + mr -u</mrow>
+            <mrow>0 \amp = bn + ms - t</mrow>
+          </md>.
+          Note that this is a system of two linear equations in the unknowns <m>b</m> and <m>m</m>.
+        </p>
+      </statement>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Write the system from part (a) in matrix form <m>A \vx = \vb</m>. Then use techniques from linear algebra to solve the linear system to show that
+          <men xml:id="eq_ls_b">
+            b = \frac{tr-us}{nr-s^2} = \frac{\left(\sum_{i=1}^n y_i\right) \left(\sum_{i=1}^n x_i^2\right) - \left(\sum_{i=1}^n x_i \right) \left(\sum_{i=1}^n x_iy_i \right)}{n\left(\sum_{i=1}^n x_i^2 \right) - \left(\sum_{i=1}^n x_i \right)^2}
+          </men>
+          and
+          <men xml:id="eq_ls_m">
+            m = \frac{nu-ts}{nr-s^2} =  \frac{n\left(\sum_{i=1}^n x_iy_i\right) - \left(\sum_{i=1}^n x_i \right) \left(\sum_{i=1}^n y_i \right)}{n\left(\sum_{i=1}^n x_i^2 \right) - \left(\sum_{i=1}^n x_i \right)^2}.
+          </men>
+          
+        </p>
+      </statement>
+    </task>
+
+  </project>
+
+  <project>
+    Use the formulas <xref ref="eq_ls_b"/> and <xref ref="eq_ls_m"/> to find the values of <m>b</m> and <m>m</m> for the regression line to fit the GDP-consumption data in <xref ref="T_GDP_consumption"/>. You may use the fact that the sum of the GDP data is <m>3.5164030 \times 10^6</m>, the sum of the consumption data is <m>2.9233750 \times 10^6</m>, the sum of the squares of the consumption data is <m>8.806564894 \times 10^{11}</m>, and the sum of the products of the GDP and consumption data is <m>1.069946378 \times 10^{12}</m>. Compare to the results the authors obtained in the paper  <articletitle>A Statistical Analysis of GDP and Final Consumption Using Simple Linear Regression, the Case of Romania 1990-2010</articletitle>. 
+  </project>
+
+</section>

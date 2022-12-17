@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="chap_coordinate_vectors">
+  <title>Coordinate Vectors and Change of Basis</title>
+  <introduction>
+    <objectives>
+    <introduction>
+      <p>
+        By the end of this section, you should be able to give precise and thorough answers to the
+        questions listed below. You may want to keep these questions in mind to focus your thoughts as
+        you complete the section.
+      </p>
+    </introduction>
+      <ul>
+        <li>
+          <p>
+            How do we find the coordinate vector of a vector <m>\vx</m> with respect to a basis <m>\CB = \{\vv_1, \vv_2, \ldots, \vv_n\}</m>?
+          </p>
+        </li>
+        <li>
+          <p>
+            What is a change of basis matrix?
+          </p>
+        </li>
+        <li>
+          <p>
+            Why is a change of basis useful?
+          </p>
+        </li>
+      </ul>
+    </objectives>
+  </introduction>
+  <xi:include  href="sec_appl_orbits.ptx"/>
+  <xi:include  href="sec_cob_intro.ptx"/>
+  <xi:include  href="sec_coor_base.ptx"/>
+  <xi:include  href="sec_cob_rn.ptx"/>
+  <xi:include  href="sec_mtx_cob.ptx"/>
+  <xi:include  href="sec_prop_mtx_cob.ptx"/>
+  <xi:include  href="sec_cob_exam.ptx"/>
+  <xi:include  href="sec_cob_summ.ptx"/>
+  <xi:include  href="sec_cob_exer.ptx"/>
+  <xi:include  href="sec_proj_orbits_cob.ptx"/>
+</chapter>
