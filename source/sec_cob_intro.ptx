@@ -39,7 +39,7 @@
     <task>
       <statement>
         <p>
-          In part (2) we were given the weights (<m>-3</m> and 2) of the linear combination of <m>\vv_1</m> and <m>\vv_2</m> that produced <m>\vb</m>.
+          In part (b), we were given the weights (<m>-3</m> and 2) of the linear combination of <m>\vv_1</m> and <m>\vv_2</m> that produced <m>\vb</m>.
           We call the vector <m>\left[ \begin{array}{r} -3 \\2 \end{array} \right]</m> the
           <term>coordinate vector</term>
           of <m>\vb</m> with respect to the basis <m>\{\vv_1, \vv_2\}</m>.

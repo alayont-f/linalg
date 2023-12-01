@@ -174,32 +174,20 @@
       <task xml:id="act_PA1_f_2">
         <introduction>
           <p>
-            In <xref ref="act_PA1_f_1"></xref>
-            we saw that the vector <m>\vb</m> could be written in infinitely many different 
-            ways as linear combinations of <m>\vv_1</m>,
-            <m>\vv_2</m>, and <m>\vv_3</m>.
-            We now ask the question if we really need all of the vectors <m>\vv_1</m>,
-            <m>\vv_2</m>,
-            and <m>\vv_3</m> to make <m>\vb</m> as a linear combination in a unique way.
+            In part (a), we saw that the vector <m>\vb</m> could be written in infinitely many different ways as linear combinations of <m>\vv_1</m>, <m>\vv_2</m>, and <m>\vv_3</m>. We now ask the question if we really need all of the vectors <m>\vv_1</m>, <m>\vv_2</m>, and <m>\vv_3</m> to make <m>\vb</m> as a linear combination in a unique way.
           </p>
         </introduction>
             <task>
               <statement>
                 <p>
-                  Can the vector <m>\vb</m> be written as a linear combination of the vectors 
-                  <m>\vv_1</m> and <m>\vv_2</m>?
-                  If not, why not?
-                  If so, in how many ways can <m>\vb</m> be written as a linear combination of 
-                  <m>\vv_1</m> and <m>\vv_2</m>?
-                  Explain.
+                  Can the vector <m>\vb</m> be written as a linear combination of the vectors <m>\vv_1</m> and <m>\vv_2</m>? If not, why not? If so, in how many ways can <m>\vb</m> be written as a linear combination of <m>\vv_1</m> and <m>\vv_2</m>? Explain.
                 </p>
               </statement>
             </task>
             <task>
               <statement>
                 <p>
-                  If possible,
-                  write <m>\vb</m> as a linear combination of <m>\vv_1</m> and <m>\vv_2</m>.
+                  If possible, write <m>\vb</m> as a linear combination of <m>\vv_1</m> and <m>\vv_2</m>.
                 </p>
               </statement>
             </task>
@@ -208,30 +196,13 @@
       <task>
         <introduction>
           <p>
-            In <xref ref="act_PA1_f_1"></xref>
-            we saw that <m>\vb</m> could be written in infinitely many different ways as a 
-            linear combination of the vectors <m>\vv_1</m>,
-            <m>\vv_2</m>, and <m>\vv_3</m>.
-            However, the vector <m>\vb</m> could only be written in one way as a linear 
-            combination of <m>\vv_1</m> and <m>\vv_2</m>.
-            So <m>\vb</m> is in <m>\Span \{\vv_1, \vv_2, \vv_3\}</m> and <m>\vb</m> is also 
-            in <m>\Span \{\vv_1, \vv_2\}</m>.
-            This raises a question <mdash/> is <em>any</em>
-            vector in <m>\Span \{\vv_1, \vv_2, \vv_3\}</m> also in <m>\Span\{\vv_1, \vv_2\}</m>.
-            If so, then the vector <m>\vv_3</m> is redundant in terms of forming the span of 
-            <m>\vv_1</m>,
-            <m>\vv_2</m>, and <m>\vv_3</m>.
-            For the sake of efficiency,
-            we want to recognize and eliminate this redundancy.
+            In part (a), we saw that <m>\vb</m> could be written in infinitely many different ways as a linear combination of the vectors <m>\vv_1</m>, <m>\vv_2</m>, and <m>\vv_3</m>. However, the vector <m>\vb</m> could only be written in one way as a linear combination of <m>\vv_1</m> and <m>\vv_2</m>. So <m>\vb</m> is in <m>\Span \{\vv_1, \vv_2, \vv_3\}</m> and <m>\vb</m> is also in <m>\Span \{\vv_1, \vv_2\}</m>. This raises a question <mdash/> is <em>any</em> vector in <m>\Span \{\vv_1, \vv_2, \vv_3\}</m> also in <m>\Span\{\vv_1, \vv_2\}</m>. If so, then the vector <m>\vv_3</m> is redundant in terms of forming the span of <m>\vv_1</m>, <m>\vv_2</m>, and <m>\vv_3</m>. For the sake of efficiency, we want to recognize and eliminate this redundancy.
           </p>
         </introduction>
             <task>
               <statement>
                 <p>
-                  Can <m>\vv_3</m> be written as a linear combination of the vectors <m>\vv_1</m> 
-                  and <m>\vv_2</m>?
-                  If not, why not?
-                  If so, write <m>\vv_3</m> as a linear combination of <m>\vv_1</m> and <m>\vv_2</m>.
+                  Can <m>\vv_3</m> be written as a linear combination of the vectors <m>\vv_1</m> and <m>\vv_2</m>? If not, why not? If so, write <m>\vv_3</m> as a linear combination of <m>\vv_1</m> and <m>\vv_2</m>.
                 </p>
               </statement>
             </task>

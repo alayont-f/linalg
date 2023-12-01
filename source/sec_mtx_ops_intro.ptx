@@ -164,13 +164,7 @@
       <task>
         <introduction>
           <p>
-            The final matrix products, when defined,
-            in <xref ref="p_matrix_multiplication">problem</xref>
-            might seem unrelated to the individual matrices at first.
-            In this problem,
-            we will uncover this relationship using our knowledge of the matrix-vector product.
-            Let <m>A = \left[ \begin{array}{rr} 3 \amp -1 \\ -2 \amp 3 \end{array} \right]</m> 
-            and <m>B = \left[ \begin{array}{ccc} 0 \amp 2 \amp 1 \\ 1 \amp 3 \amp 2 \end{array} \right]</m>.
+            The final matrix products in part c, when defined, might seem unrelated to the individual matrices at first. In this problem, we will uncover this relationship using our knowledge of the matrix-vector product. Let <m>A = \left[ \begin{array}{rr} 3 \amp -1 \\ -2 \amp 3 \end{array} \right]</m> and <m>B = \left[ \begin{array}{ccc} 0 \amp 2 \amp 1 \\ 1 \amp 3 \amp 2 \end{array} \right]</m>.
           </p>
         </introduction>
             <task>

@@ -186,7 +186,7 @@
             <task>
               <statement>
                 <p>
-                  Use property (c) of <xref ref="thm_6_a_dot_product"></xref>
+                  Use the third property in <xref ref="thm_6_a_dot_product"></xref>
                   to determine the value of <m>\vu \cdot 2\vv</m>.
                 </p>
               </statement>
@@ -194,7 +194,7 @@
             <task>
               <statement>
                 <p>
-                  Use property (b) of <xref ref="thm_6_a_dot_product"></xref>
+                  Use the second property in <xref ref="thm_6_a_dot_product"></xref>
                   to determine the value of <m>(\vu + \vv) \cdot \vv</m>.
                 </p>
               </statement>

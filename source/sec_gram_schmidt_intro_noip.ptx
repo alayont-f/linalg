@@ -60,7 +60,7 @@
     <task>
       <statement>
         <p>
-          Part (4) shows that neither vector <m>\vu_1 = \proj_{\vw_1} \vv</m>nor <m>\vu_2 = \proj_{\vw_2} \vv</m>is the vector in <m>W</m>that is closest to <m>\vv</m> We should probably expect this neither projection uses the fact that the other vector might contribute to the closest vector. Let us instead consider the sum <m>\vu_3 = \vu_1+\vu_2</m> Calculate the components of this vector <m>\vu_3</m>and determine the distance between <m>\vu_3</m>and <m>\vv</m> Which of the three vectors <m>\vu_1</m> <m>\vu_2</m> and <m>\vu_3</m>in <m>W</m>is closest to <m>\vv</m>?  
+          Part (d) shows that neither vector <m>\vu_1 = \proj_{\vw_1} \vv</m>nor <m>\vu_2 = \proj_{\vw_2} \vv</m>is the vector in <m>W</m>that is closest to <m>\vv</m> We should probably expect this neither projection uses the fact that the other vector might contribute to the closest vector. Let us instead consider the sum <m>\vu_3 = \vu_1+\vu_2</m> Calculate the components of this vector <m>\vu_3</m>and determine the distance between <m>\vu_3</m>and <m>\vv</m> Which of the three vectors <m>\vu_1</m> <m>\vu_2</m> and <m>\vu_3</m>in <m>W</m>is closest to <m>\vv</m>?  
         </p>
       </statement>
     </task>

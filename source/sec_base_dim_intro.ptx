@@ -60,7 +60,7 @@
       <task>
         <introduction>
           <p>
-            In problem (1) we should have noticed that a space can have more than one basis,
+            In part (a), we should have noticed that a space can have more than one basis,
             but that any two bases contain the same number of elements.
             This is a critically important idea that we investigate in more detail in this problem in one specific case.
             Assume that <m>W</m> is a subspace of <m>\R^n</m> that has a basis

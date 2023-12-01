@@ -95,9 +95,9 @@
           However, the positioning of the ones is also strategical.
           By letting ones above the diagonal determine how to split the matrix into diagonal blocks,
           we can categorize the matrices.
-          For example, the matrix in part (c) has one big
+          For example, the matrix in part (iii) has one big
           <m>3\times 3</m> block with twos on the diagonal and ones above,
-          while the matrix in part (d) as a
+          while the matrix in part (iv) as a
           <m>2\times 2</m> block at the top left and another
           <m>1\times 1</m> block at the bottom right.
           Determine the blocks for all matrices above,

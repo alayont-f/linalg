@@ -35,7 +35,7 @@
             then we need to make a better guess.
             We have little to work with other than just random guessing,
             but we can use <m>\vx_1 = A\vx_0</m> as another guess.
-            We calculated <m>\vx_1</m> in part 1.
+            We calculated <m>\vx_1</m> in part (a).
             Is <m>\vx_1</m> an eigenvector for <m>A</m>?
             Explain.
           </p>

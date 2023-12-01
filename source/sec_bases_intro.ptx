@@ -86,7 +86,7 @@
                 <p>
                   Recall that in <m>\R^n</m>,
                   a set of two vectors is linearly dependent if and only if one of the vectors in the set is a scalar multiple of the other and linearly independent if neither vector is a scalar multiple of the other.
-                  Verify your answer to part (c) from a similar perspective in <m>\pol_1</m>.
+                  Verify your answer to part (ii) from a similar perspective in <m>\pol_1</m>.
                 </p>
               </statement>
             </task>
@@ -94,7 +94,7 @@
       <task>
         <introduction>
           <p>
-            We can use the same type of method as in problem (1) to address the question of whether the set
+            We can use the same type of method as in part (a) to address the question of whether the set
             <me>
               \left\{ \left[ \begin{array}{cc} 1\amp 3 \\ 1\amp 2 \end{array}  \right], \left[ \begin{array}{cr} 1\amp -9 \\ 1\amp 8 \end{array}  \right], \left[ \begin{array}{cr} 1\amp -1 \\ 1\amp 4 \end{array}  \right] \right\}
             </me>
@@ -122,14 +122,14 @@
             <task>
               <statement>
                 <p>
-                  Use appropriate matrix tools and techniques to find all solutions to the system from part (a).
+                  Use appropriate matrix tools and techniques to find all solutions to the system from part (i).
                 </p>
               </statement>
             </task>
             <task>
               <statement>
                 <p>
-                  What does the set of solutions to the system from part (a) tell you about the linear independence or dependence of the set
+                  What does the set of solutions to the system from part (i) tell you about the linear independence or dependence of the set
                   <me>
                     \left\{ \left[ \begin{array}{cc} 1\amp 3 \\ 1\amp 2 \end{array}  \right], \left[ \begin{array}{cr} 1\amp -9 \\ 1\amp 8 \end{array}  \right], \left[ \begin{array}{cr} 1\amp -1 \\ 1\amp 4 \end{array}  \right] \right\}?
                   </me>
@@ -141,7 +141,7 @@
                 <p>
                   Recall that in <m>\R^n</m>,
                   a set of vectors is linearly dependent if and only if one of the vectors in the set is a linear combination of the others and linearly independent if no vector in the set is a linear combination of the others.
-                  Verify your answer to part (c) from a similar perspective in <m>\M_{2 \times 2}</m>.
+                  Verify your answer to part (iii) from a similar perspective in <m>\M_{2 \times 2}</m>.
                 </p>
               </statement>
             </task>
@@ -149,9 +149,7 @@
       <task>
         <statement>
           <p>
-            We will define a basis for a vector space to be a linearly independent spanning set.
-            Which, if any,
-            of the sets in parts (1) and (2) is a basis for its vector space?
+            We will define a basis for a vector space to be a linearly independent spanning set. Which, if any, of the sets in parts (a) and (b) is a basis for its vector space?
             Explain.
           </p>
         </statement>

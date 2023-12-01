@@ -70,7 +70,7 @@
               x_1 \left[ \begin{array}{c} 1 \\ 1 \\ 2 \end{array}  \right] +x_2 \left[ \begin{array}{c}  1\\ 2\\ 3 \end{array}  \right] + x_3 \left[ \begin{array}{r} -1 \\ 2 \\ -3 \end{array}  \right] = \left[ \begin{array}{c} 4 \\ 3\\ 11 \end{array}  \right]
             </me>
             in matrix-vector form.
-            Note that this is the vector equation whose augmented matrix representation was given in Problem 2 in <xref ref="pa_1_b"></xref>.
+            Note that this is the vector equation whose augmented matrix representation was given in part (b) of <xref ref="pa_1_b"></xref>.
             Compare your matrix <m>A</m> and the right hand side vector to the augmented matrix.
             Do not solve the system.
           </p>
@@ -84,7 +84,7 @@
               \left[ \begin{array}{crr} 1 \amp  2 \amp  -1 \\ 0\amp 1\amp 2\\1\amp -2\amp -3 \end{array}  \right] \vx = \left[\begin{array}{r} -3\\3\\-7 \end{array} \right]
             </me>
             represent the system corresponding to this equation.
-            Note that this should correspond to the system (or an equivalent system where an equation might be multiplied by <m>(-1)</m>) in Problem 1 of <xref ref="pa_1_b"></xref>.
+            Note that this should correspond to the system (or an equivalent system where an equation might be multiplied by <m>(-1)</m>) in part (a) of <xref ref="pa_1_b"></xref>.
           </p>
         </statement>
       </task>

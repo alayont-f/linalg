@@ -138,7 +138,7 @@
                 <task>
                   <statement>
                     <p>
-                      Use the result from part (a) to set up two matrix equations to solve 
+                      Use the result from part (A) to set up two matrix equations to solve 
                       to find <m>\vb_1</m> and <m>\vb_2</m>.
                       Then find <m>\vb_1</m> and <m>\vb_2</m>.
                       As a result, find the matrix <m>B</m>.
