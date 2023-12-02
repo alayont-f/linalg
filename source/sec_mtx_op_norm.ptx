@@ -77,8 +77,13 @@
           <p>
             Let <m>A = \left[ \begin{array}{cc} 1\amp 0\\0\amp 2 \end{array} \right]</m>.
             Find <m>||A||</m>.
-            Justify your answer. (Hint: <m>x_1^2+4x_2^2 \leq 4(x_1^2 + x_2^2)</m>.)
-          </p>
+            Justify your answer. 
+					 <hint>
+        <p>
+           <m>x_1^2+4x_2^2 \leq 4(x_1^2 + x_2^2)</m>.
+        </p>
+      </hint>	
+								</p>
         </statement>
       </task>
       <task>
