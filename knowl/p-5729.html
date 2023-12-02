@@ -12,7 +12,7 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<p>We can then apply a 16 by 16 forward wavelet transformation matrix <span class="process-math">\(A_{16}\)</span> to <span class="process-math">\(M\)</span> to convert the columns to averages and wavelet coefficients that will appear in the matrix <span class="process-math">\(A_{16}M\text{.}\)</span> These wavelet coefficients allow us to compress the image — that is, create a smaller set of data that contains the essence of the original image.</p>
+<p>Now we have all of the necessary background to discuss image compression. Suppose we want to store an image. We partition the image vertically and horizontally and record the color or shade at each grid entry. The grid entries will be our pixels. This gives a matrix, <span class="process-math">\(M\text{,}\)</span> of colors, indexed by pixels or horizontal and vertical position. To simplify our examples we will work in gray-scale, where our grid entries are integers between 0 (black) and 255 (white). We can treat each column of our grid as a piecewise constant function. As an example, the image matrix <span class="process-math">\(M\)</span> that produced the picture at left in <a href="" class="xref" data-knowl="./knowl/F_Flower_1.html" title="Figure 32.1">Figure 32.1</a> is given in <a href="" class="xref" data-knowl="./knowl/eq_flower_image_matrix.html" title="Equation 32.1">(32.1)</a>.</p>
 <span class="incontext"><a href="chap_bases.html#p-5729" class="internal">in-context</a></span>
 </body>
 </html>

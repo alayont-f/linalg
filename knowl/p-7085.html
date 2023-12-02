@@ -12,13 +12,18 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<p>This makes</p>
+<p>Let <span class="process-math">\(\CB = \{T^{a_1-1}(\vu_1), T^{a_1-2}(\vu_1), \ldots, T^2(\vu_1), T(\vu_1), \vu_1\}\text{.}\)</span> Then</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-[T]_{\CB} =  \left[ \begin{array}{cccccccc} 0\amp 1\amp 0\amp 0\amp \cdots \amp  0 \amp 0\amp 0 \\ 0\amp 0\amp 1\amp 0\amp \cdots \amp  0\amp 0\amp 0 \\ \amp \amp \ddots\amp \ddots \amp \amp   \amp \amp \\ \amp \amp \amp \amp \vdots \amp \amp \amp   \\ 0\amp 0\amp 0\amp 0\amp \cdots \amp  0\amp 1\amp 0 \\ 0\amp 0\amp 0\amp 0\amp \cdots \amp  0\amp 0\amp 1 \\ 0\amp 0\amp 0\amp 0\amp \cdots \amp  0\amp 0\amp 0 \end{array}  \right]\text{,}
-\end{equation*}
+\begin{align*}
+_{\CB} \amp = [T^{a_1}(\vu_1)]_{\CB} = [0 \ 0 \ 0 \  \  \ldots \ 0 \ 0]^{\tr}\\
+[T(T^{a_1-2}(\vu_1))]_{\CB} \amp = [T^{a_1-1}(\vu_1)]_{\CB} = [1 \ 0 \ 0 \ \  \ldots \ 0 \ 0]^{\tr}\\
+[T(T^{a_1-3}(\vu_1))]_{\CB} \amp = [T^{a_1-3}(\vu_1)]_{\CB} = [0 \ 1 \ 0 \ \  \ldots \ 0 \ 0]^{\tr}\\
+\amp \vdots\\
+[T(T^2(\vu_1))]_{\CB} \amp = [T^3(\vu_1)]_{\CB} = [0 \ 0 \ 0 \  \ \ldots \ 0 \ 1 \ 0 \ 0 \ 0]^{\tr}\\
+[T(T(\vu_1))]_{\CB} \amp = [T^2(\vu_1)]_{\CB} = [0 \ 0 \ 0 \  \ \ldots \ 0 \ 0 \ 1 \ 0 \ 0]^{\tr}\\
+[T(\vu_1)]_{\CB} \amp = [T(\vu_1)]_{\CB} = [0 \ 0 \ 0 \  \ \ldots \ 0 \ 0 \ 0 \ 1 \ 0]^{\tr}\text{.}
+\end{align*}
 </div>
-<p class="continuation">which gives one Jordan block.</p>
 <span class="incontext"><a href="chap_JCF.html#p-7085" class="internal">in-context</a></span>
 </body>
 </html>

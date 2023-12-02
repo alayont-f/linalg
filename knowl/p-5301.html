@@ -11,8 +11,16 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h5 class="heading"><span class="type">Paragraph</span></h5>
-<p>The system of equations <a href="" class="xref" data-knowl="./knowl/eq_GPS_1_sqrt.html" title="Equation 30.14">(30.14)</a>, <a href="" class="xref" data-knowl="./knowl/eq_GPS_2_sqrt.html" title="Equation 30.15">(30.15)</a>, <a href="" class="xref" data-knowl="./knowl/eq_GPS_3_sqrt.html" title="Equation 30.16">(30.16)</a>, and <a href="" class="xref" data-knowl="./knowl/eq_GPS_4_sqrt.html" title="Equation 30.17">(30.17)</a> is a non-linear system and is difficult to solve, if it even has a solution. We want a method that will provide at least an approximate solution as well as apply if we use more than four satellites. We choose a reference node (say <span class="process-math">\((x_1, y_1, z_1)\)</span>) and make calculations relative to that node as we did in <a href="" class="xref" data-knowl="./knowl/act_GPS_plane_ex.html" title="Project Activity 30.11">Project Activity 30.11</a>.</p>
+<h4 class="heading"><span class="type">Paragraph</span></h4>
+<p>Again, we are treating <span class="process-math">\(d\)</span> as an unknown, so this equation has the four unknowns <span class="process-math">\(x\text{,}\)</span> <span class="process-math">\(y\text{,}\)</span> <span class="process-math">\(z\text{,}\)</span> and <span class="process-math">\(d\text{.}\)</span> Using signals from four satellites produces the system of equations</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{align}
+\sqrt{(x-x_1)^2 + (y-y_1)^2 + (z-z_1)^2} \amp =  c(t_1-d)\tag{30.14}\\
+\sqrt{(x-x_2)^2 + (y-y_2)^2 + (z-z_2)^2}  \amp =  c(t_2-d)\tag{30.15}\\
+\sqrt{(x-x_3)^2 + (y-y_3)^2 + (z-z_3)^2} \amp =  c(t_3-d)\tag{30.16}\\
+\sqrt{(x-x_4)^2 + (y-y_4)^2 + (z-z_4)^2} \amp =  c(t_4-d)\text{.}\tag{30.17}
+\end{align}
+</div>
 <span class="incontext"><a href="chap_pseudoinverses.html#p-5301" class="internal">in-context</a></span>
 </body>
 </html>

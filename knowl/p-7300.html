@@ -12,7 +12,15 @@
 </head>
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
-<p>Verification of the remaining properties is left to the reader.</p>
+<p>These properties can be verified using complex arithmetic. For example, to verify the first property, let <span class="process-math">\(r = a+ib\)</span> be a complex number and let <span class="process-math">\(\vv = \vx + i \vy\)</span> be a complex vector. The operations on complex numbers give us</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{align*}
+\overline{r\vv} \amp = \overline{(a\vx-b\vy) + i(a\vy + b\vx)}\\
+\amp = (a\vx-b\vy) - i(a\vy + b\vx)\\
+\amp = (a-ib)(\vx - i\vy)\\
+\amp = \overline{r} \overline{\vv}\text{.}
+\end{align*}
+</div>
 <span class="incontext"><a href="app_complex_numbers.html#p-7300" class="internal">in-context</a></span>
 </body>
 </html>

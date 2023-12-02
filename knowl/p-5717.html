@@ -11,8 +11,14 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h5 class="heading"><span class="type">Paragraph</span></h5>
-<p>We can now write any function in <span class="process-math">\(V_n\)</span> using the basis <span class="process-math">\(\CW_n\text{.}\)</span> As an example, the string 50, 16, 14, 28 represents a piecewise constant function which can be written as <span class="process-math">\(50 \varphi_{2,0} + 16 \varphi_{2,1} + 14 \varphi_{2,2} + 28 \varphi_{2,3}\text{,}\)</span> an element in <span class="process-math">\(V_2\text{.}\)</span></p>
+<h4 class="heading"><span class="type">Paragraph</span></h4>
+<p>As <a href="" class="xref" data-knowl="./knowl/act_psi.html" title="Project Activity 32.7">Project Activity 32.7</a> suggests, we can make a basis for <span class="process-math">\(V_n\)</span> from <span class="process-math">\(\varphi_{0,0}\)</span> and functions of the form <span class="process-math">\(\psi_{n,k}\)</span> defined by <span class="process-math">\(\psi_{n,k}(x) = \psi\left(2^nx-k\right)\)</span> for <span class="process-math">\(k\)</span> from 0 to <span class="process-math">\(2^n-1\text{.}\)</span> More specifically, if we let <span class="process-math">\(\CS_n = \{\psi_{n,k} : 0 \leq k \leq 2^n-1\}\text{,}\)</span> then the set</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/act_psi.html">
+\begin{equation*}
+\CW_n = \{\varphi_{0,0}\} \cup \bigcup_{j=0}^{n-1} \CS_j
+\end{equation*}
+</div>
+<p class="continuation">is a basis for <span class="process-math">\(V_n^{\perp}\)</span> (we state this without proof). The functions <span class="process-math">\(\psi_{n,k}\)</span> are the <em class="emphasis">wavelets</em>.</p>
 <span class="incontext"><a href="chap_bases.html#p-5717" class="internal">in-context</a></span>
 </body>
 </html>

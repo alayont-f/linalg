@@ -12,7 +12,13 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<p>If the columns of <span class="process-math">\(A\)</span> are linearly independent, then we do not need to use an SVD to find the pseudoinverse, as the next activity illustrates.</p>
+<p>Now, if <span class="process-math">\(\vz = A^{+} \vb\text{,}\)</span> then</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+A\vz = (U\Sigma V^{\tr})(V \Sigma^+ U^{\tr} \vb) = (U \Sigma \Sigma^+ U^{\tr})\vb = (UDU^{\tr})\vb = \proj_{\Col A} \vb\text{,}
+\end{equation*}
+</div>
+<p class="continuation">and hence the vector <span class="process-math">\(A \vz = AA^+ \vb\)</span> is the vector <span class="process-math">\(A\vx\)</span> in <span class="process-math">\(\Col A\)</span> that minimizes <span class="process-math">\(||A \vx - \vb||\text{.}\)</span> Thus, <span class="process-math">\(A\vz\)</span> is in actuality the least squares approximation to <span class="process-math">\(\vb\text{.}\)</span> So a singular value decomposition allows us to construct the pseudoinverse of a matrix <span class="process-math">\(A\)</span> and then directly solve the least squares problem.</p>
 <span class="incontext"><a href="chap_pseudoinverses.html#p-5191" class="internal">in-context</a></span>
 </body>
 </html>

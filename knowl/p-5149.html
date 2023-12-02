@@ -12,7 +12,15 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<p>This constant <span class="process-math">\(||A^{-1}|| \ ||A||\)</span> is the best bound and so is called the condition number of <span class="process-math">\(A\text{.}\)</span></p>
+<p>Combining <a href="" class="xref" data-knowl="./knowl/eq_7_c_cn2.html" title="Equation 30.8">(30.8)</a> and <a href="" class="xref" data-knowl="./knowl/eq_7_c_cn3.html" title="Equation 30.9">(30.9)</a> gives</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_7_c_cn2.html ./knowl/eq_7_c_cn3.html">
+\begin{align*}
+\frac{||\Delta \vx||}{||\vx||} \amp \leq \frac{||A^{-1}|| \ ||\Delta \vb||}{||\vx||}\\
+\amp = ||A^{-1}|| \ ||\Delta \vb|| \left(\frac{1}{||\vx||}\right)\\
+\amp \leq ||A^{-1}|| \ ||\Delta \vb||  \frac{||A||}{||\vb||}\\
+\amp = ||A^{-1}|| \ ||A|| \ \frac{||\Delta \vb||}{||\vb||}\text{.}
+\end{align*}
+</div>
 <span class="incontext"><a href="chap_pseudoinverses.html#p-5149" class="internal">in-context</a></span>
 </body>
 </html>

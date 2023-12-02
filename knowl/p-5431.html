@@ -12,7 +12,15 @@
 </head>
 <body class="ignore-math">
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>If <span class="process-math">\(a \vu = a \vv\)</span> and <span class="process-math">\(a \neq 0\text{,}\)</span> must <span class="process-math">\(\vu = \vv\text{?}\)</span> Use the properties of a vector space or provide a counterexample to justify your answer.</p>
+<p>We will show that this statement is true. Suppose <span class="process-math">\(a \vv = b \vv\)</span> and <span class="process-math">\(\vv \neq \vzero\text{.}\)</span> Then <span class="process-math">\(\vzero = a \vv - b \vv = (a-b)\vv\text{.}\)</span> If <span class="process-math">\(a = b\text{,}\)</span> then we are done. So suppose <span class="process-math">\(a \neq b\text{.}\)</span> Then <span class="process-math">\(a-b \neq 0\)</span> and <span class="process-math">\(\frac{1}{a-b}\)</span> is a real number. Then</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{align*}
+\frac{1}{a-b} \vzero \amp = \frac{1}{a-b}((a-b)\vv)\\
+\vzero \amp = \left(\frac{1}{a-b}(a-b)\right) \vv\\
+\vzero \amp = \vv\text{.}
+\end{align*}
+</div>
+<p class="continuation">But we assumed that <span class="process-math">\(\vv \neq \vzero\text{,}\)</span> so we can conclude that <span class="process-math">\(a = b\)</span> as desired.</p>
 <span class="incontext"><a href="chap_vector_spaces.html#p-5431" class="internal">in-context</a></span>
 </body>
 </html>

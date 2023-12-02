@@ -12,7 +12,12 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<p>For <span class="process-math">\(i\)</span> from 1 to <span class="process-math">\(r\text{,}\)</span> let <span class="process-math">\(\vu_i = \frac{A\vv_i}{||A\vv_i||}\text{.}\)</span> Then the set <span class="process-math">\(\{\vu_1, \vu_2, \ldots, \vu_r\}\)</span> forms an orthonormal basis of <span class="process-math">\(\Col A\text{.}\)</span></p>
+<p>The singular values of <span class="process-math">\(A\)</span> are the numbers <span class="process-math">\(\sigma_i\text{,}\)</span> where <span class="process-math">\(\sigma_i = \sqrt{\lambda_i} &gt; 0\)</span> for <span class="process-math">\(i\)</span> from 1 to <span class="process-math">\(r\text{.}\)</span> Let <span class="process-math">\(\Sigma\)</span> be the <span class="process-math">\(m \times n\)</span> matrix</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\Sigma = \left[ \begin{array}{ccccc|c} \sigma_1\amp \amp \amp \amp 0\amp  \\ \amp  \sigma_2\amp \amp \amp \amp 0 \\ \amp \amp  \sigma_3\amp \amp \amp  \\ \amp   \amp  \amp  \ddots \amp  \amp  \\ 0\amp \amp \amp \amp  \sigma_r \\ \hline \amp \amp 0\amp \amp \amp 0 \end{array}  \right]
+\end{equation*}
+</div>
 <span class="incontext"><a href="chap_SVD.html#p-4962" class="internal">in-context</a></span>
 </body>
 </html>

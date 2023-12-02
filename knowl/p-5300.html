@@ -12,14 +12,17 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<p>Again, we are treating <span class="process-math">\(d\)</span> as an unknown, so this equation has the four unknowns <span class="process-math">\(x\text{,}\)</span> <span class="process-math">\(y\text{,}\)</span> <span class="process-math">\(z\text{,}\)</span> and <span class="process-math">\(d\text{.}\)</span> Using signals from four satellites produces the system of equations</p>
+<p>To ensure accuracy, the GPS uses signals from four satellites. Assume a satellite is positioned at point <span class="process-math">\((x_1,y_1,z_1)\)</span> at a distance <span class="process-math">\(d_1\)</span> from the GPS receiver located at point <span class="process-math">\((x,y,z)\text{.}\)</span> The distance can also be measured in two ways: as</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
-\begin{align}
-\sqrt{(x-x_1)^2 + (y-y_1)^2 + (z-z_1)^2} \amp =  c(t_1-d)\tag{30.14}\\
-\sqrt{(x-x_2)^2 + (y-y_2)^2 + (z-z_2)^2}  \amp =  c(t_2-d)\tag{30.15}\\
-\sqrt{(x-x_3)^2 + (y-y_3)^2 + (z-z_3)^2} \amp =  c(t_3-d)\tag{30.16}\\
-\sqrt{(x-x_4)^2 + (y-y_4)^2 + (z-z_4)^2} \amp =  c(t_4-d)\text{.}\tag{30.17}
-\end{align}
+\begin{equation*}
+\sqrt{(x-x_1)^2+(y-y_1)^2+(z-z_1)^2}\text{.}
+\end{equation*}
+</div>
+<p class="continuation">and as <span class="process-math">\(c(t_1-d)\text{.}\)</span> So</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+c(t_1-d) = \sqrt{(x-x_1)^2 + (y-y_1)^2 + (z-z_1)^2}\text{.}
+\end{equation*}
 </div>
 <span class="incontext"><a href="chap_pseudoinverses.html#p-5300" class="internal">in-context</a></span>
 </body>

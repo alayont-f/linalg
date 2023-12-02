@@ -12,13 +12,18 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<p>So <span class="process-math">\(T(\vv) \in \Ker(T - \lambda I)^s\text{.}\)</span> Similarly, suppose that <span class="process-math">\(\vv \in \Range(T - \lambda I)^s\text{.}\)</span> Then there is a <span class="process-math">\(\vu \in V\)</span> such that <span class="process-math">\((T - \lambda I)^s(\vu) = \vv\text{.}\)</span> Then</p>
+<p>Next we demonstrate that <span class="process-math">\(\Ker(T - \lambda I)^s\)</span> and <span class="process-math">\(\Range(T - \lambda I)^s\)</span> are invariant under <span class="process-math">\(T\text{.}\)</span> Note that</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-T(\vv) = T\left((T - \lambda I)^s(\vu)\right) = \left(T(T - \lambda I)^s\right)(\vu) = \left((T - \lambda I)^sT\right)(\vu) = (T - \lambda I)^s(T(\vu))\text{,}
+T(T - \lambda I) = T^2 - \lambda T = (T-\lambda I)T\text{,}
 \end{equation*}
 </div>
-<p class="continuation">and <span class="process-math">\(T(\vv) \in \Range(T - \lambda I)^s\text{.}\)</span></p>
+<p class="continuation">and <span class="process-math">\(T\)</span> commutes with <span class="process-math">\((T - \lambda I)\text{.}\)</span> By induction, <span class="process-math">\(T\)</span> commutes with <span class="process-math">\((T - \lambda I)^s\text{.}\)</span> Suppose that <span class="process-math">\(\vv \in \Ker(T - \lambda I)^s\text{.}\)</span> Then</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+(T - \lambda I)^sT(\vv) = T(T - \lambda I)^s(\vv) = T(\vzero) = \vzero\text{.}
+\end{equation*}
+</div>
 <span class="incontext"><a href="chap_JCF.html#p-7070" class="internal">in-context</a></span>
 </body>
 </html>
