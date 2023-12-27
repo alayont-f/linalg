@@ -46,7 +46,7 @@
         <m>A \vv_2 = \vv_1</m> is <m>\vv_2 = [0 \ 0 \ 1]^{\tr}</m>.
         Letting <m>C = \left[ \begin{array}{ccr} 1\amp 0\amp 0\\0\amp 0\amp -1\\0\amp 1\amp 1 \end{array}  \right]</m> gives us
         <me>
-          \C^{-1}AC = \left[ \begin{array}{ccc} 0\amp 1\amp 0 \\ 0\amp 0\amp 0 \\ 0\amp 0\amp 0 \end{array}  \right]
+          C^{-1}AC = \left[ \begin{array}{ccc} 0\amp 1\amp 0 \\ 0\amp 0\amp 0 \\ 0\amp 0\amp 0 \end{array}  \right]
         </me>.
             </p>
           </solution>
